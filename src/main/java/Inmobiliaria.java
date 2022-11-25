@@ -9,41 +9,39 @@ public class Inmobiliaria {
 	private ArrayList<Venta> ventas = new ArrayList<Venta>();
 
 	public void agregarCliente() {
-		throw new UnsupportedOperationException();
+		;
 	}
 
 	public void agregarVendedor() {
-		throw new UnsupportedOperationException();
+		;
 	}
 
 	public void agregarInmueble() {
-		throw new UnsupportedOperationException();
+		;
 	}
 
 	public void eliminarInmueble() {
-		throw new UnsupportedOperationException();
+		;
 	}
 
 	public ArrayList<Inmueble> buscarInmueblePorTipoConstruccion(String tipoDeConstruccion) {
 		for(Inmueble inmueble : this.inmuebles){
 			if(inmueble.getTipoDeConstruccion().equals(tipoDeConstruccion)){
-				System.out.println("Inmueble encontrado");
-				return;
+
+
 			}
 		}
-
-		System.out.println("Inmueble no encontrado");
+		return;
 	}
 
 	public ArrayList<Inmueble> buscarInmueblePorPrecio(int precio) {
 		for(Inmueble inmueble : this.inmuebles){
 			if(inmueble.getPrecio()==(precio)){
-				System.out.println("Inmueble encontrado");
-				return;
+
+
 			}
 		}
-
-		System.out.println("Inmueble no encontrado");;
+		return;
 	}
 
 	public ArrayList<Cliente> getClientes() {
